@@ -3,25 +3,38 @@
 # It describes a set of packages to be installed, along with
 # configuration settings.
 spack:
+  definitions:
+  # _name and _version are reserved definitions that inform build-cd deployments, and have no effect otherwise
+  - _name: # [DEPLOYMENT_NAME_HERE]
+  - _version: # [DEPLOYMENT_VERSION_HERE]
   specs:
   # The root Spack Bundle Recipe (SBR) for the model and overall version of
   # the deployment:
-  # TODO: Replace the MODEL and VERSION.
-  # - MODEL@git.VERSION
+  # TODO: Replace the MODEL.
+  # - MODEL
   packages:
     # Specification of dependency versions and variants. CI/CD requires that
     # the first element of the require is only a version:
     # TODO: Specify versions and variants of dependencies as required.
     # openmpi:
     #   require:
-    #     - '@4.1.5'
+    #   - '@4.1.5'
 
+    # Compilers
+    # c:
+    #  require:
+    #  - intel-oneapi-compilers-classic@19.0.5.281
+    # cxx:
+    #  require:
+    #  - intel-oneapi-compilers-classic@19.0.5.281
+    # fortran:
+    #   require:
+    #   - intel-oneapi-compilers-classic@19.0.5.281
     # Specifications that apply to all packages
     all:
-    # TODO: Specify compiler/targets for all packages
+    # TODO: Specify targets for all packages
     # require:
-    #   - '%intel@19.0.5.281'
-    #   - 'target=x86_64'
+    # - 'target=x86_64_v3'
   view: true
   concretizer:
     unify: true
