@@ -21,15 +21,20 @@ spack:
     #   - '@4.1.5'
 
     # Compilers
-    # intel-oneapi-compilers-classic:
+    # c:
+    #  require:
+    #  - intel-oneapi-compilers-classic@19.0.5.281
+    # cxx:
+    #  require:
+    #  - intel-oneapi-compilers-classic@19.0.5.281
+    # fortran:
     #   require:
-    #   - '@19.0.5.281'
+    #   - intel-oneapi-compilers-classic@19.0.5.281
     # Specifications that apply to all packages
     all:
-    # TODO: Specify compiler/targets for all packages
+    # TODO: Specify targets for all packages
     # require:
-    # - '%access_intel'
-    # - 'target=x86_64'
+    # - 'target=x86_64_v3'
   view: true
   concretizer:
     unify: true
