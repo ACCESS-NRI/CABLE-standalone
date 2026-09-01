@@ -14,9 +14,9 @@ spack:
   specs:
   - cable
   packages:
-     cable:
-       require:
-       - '@git.2026.07.000'
+    cable:
+      require:
+      - '@git.2026.07.000'
     # Indirect dependencies
     netcdf-c:
       require:
