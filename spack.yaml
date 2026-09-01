@@ -11,6 +11,7 @@ spack:
   - _spack-version: ["1.1"]
   # Release database provenance information - packages for inclusion into the database, and packages just for injection into the modules
   - _provenance: ["cable"]
+  - _injection: []
   specs:
   - cable
   packages:
