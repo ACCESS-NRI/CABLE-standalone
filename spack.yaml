@@ -18,6 +18,7 @@ spack:
     cable:
       require:
       - '@git.2026.07.000'
+      - ~mpi
     # Indirect dependencies
     netcdf-c:
       require:
