@@ -46,3 +46,11 @@ spack:
       git: https://github.com/ACCESS-NRI/access-spack-packages.git
       tag: 2026.07.013
       destination: $env/package-repos/access-spack-packages
+  modules:
+    default:
+      tcl:
+        include:
+        - cable
+        projections:
+          # build-cd will inject the _version into this projection
+          cable: '{name}/{version}'
