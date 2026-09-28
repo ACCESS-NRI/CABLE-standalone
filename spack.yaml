@@ -42,7 +42,7 @@ spack:
   repos:
     access_spack_packages:
       git: https://github.com/ACCESS-NRI/access-spack-packages.git
-      tag: 2026.07.013
+      tag: 2026.09.002
       destination: $env/package-repos/access-spack-packages
   modules:
     default:
