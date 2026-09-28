@@ -17,17 +17,15 @@ spack:
   packages:
     cable:
       require:
-      - '@git.2026.07.000'
+      - '@2026.07.000'
       - ~mpi
     # Indirect dependencies
     netcdf-c:
       require:
       - '@4.9.2'
-
     netcdf-fortran:
       require:
       - '@4.5.2'
-
     # Compilers
     c:
       require:
