@@ -15,10 +15,10 @@ spack:
   specs:
   - cable
   packages:
-    cable:
-      require:
-      - '@2026.07.000'
-      - ~mpi
+   cable:
+     require:
+     - '@2026.07.000'
+     - ~mpi
     # Indirect dependencies
     netcdf-c:
       require:
